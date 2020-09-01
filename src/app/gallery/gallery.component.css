@@ -1,0 +1,7 @@
+.card{
+    width:12%;
+    transition: all .1s;
+	margin: 5px 10px;
+	height: 120px;
+    overflow: hidden;
+}

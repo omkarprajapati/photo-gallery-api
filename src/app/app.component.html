@@ -1,0 +1,13 @@
+<div class="content-container">
+  <navbar [title]="title" (filterTyped)="filterDogsList($event)">
+  </navbar>
+  <div class="row content">
+    <div class="col-3 scroll">
+      <dogs-list [dogs]="dogs" [selected]="selected" (dogClicked)="dogSelected($event)" (randomClicked)="randomSelected()"></dogs-list>
+    </div>
+    <div class="col-9 scroll gallery">
+      <gallery [images]="images" [selected]="selected" [busy]="dogSvc.fetchingImages">
+      </gallery>
+    </div>
+  </div>
+</div>
